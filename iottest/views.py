@@ -5,14 +5,13 @@ import json,datetime
 
 # Create your views here.
 
-from django.http import JsonResponse
-
 def keyboard(request):
 
 	return JsonResponse({
 	'type' : 'buttons',
   	'buttons': ['카메라','온도','습도']
 })
+
 
 @csrf_exempt
 
@@ -26,5 +25,10 @@ def answer(request):
 
 	  'message': {
 	   'text': today_dat + '의' + iot_name + '입니다.'
-	  }
+	  },
+
+	'keyboard':{
+		'type':'buttons',
+		'buttons':['카메라','온도','습도']
+	}
 	  })
