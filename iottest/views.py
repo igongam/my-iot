@@ -13,11 +13,11 @@ def keyboard(request):
 
 @csrf_exempt
 
-def anser(request):
+def answer(request):
 	  json_str=((request.body).decode('utf-8'))
 	  recieved_json_data=json.loads(json_str)
 	  iot_name=received_json_data['content']
-	  today_date=datetime.date.today().strftime("% dnjf  %d  dlf ")
+	  today_date=datetime.date.today().strftime("% dnjf   %d  dlf ")
 
 	  return JsonResponse({
 
