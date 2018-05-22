@@ -16,6 +16,7 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from iottest.views import keyboard
+from iottest.views import answer
 
 urlpatterns = [
     url(r'^keyboard/', keyboard, name='keyboard'),

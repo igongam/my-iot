@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
 
@@ -17,11 +18,11 @@ def answer(request):
 	  json_str=((request.body).decode('utf-8'))
 	  recieved_json_data=json.loads(json_str)
 	  iot_name=received_json_data['content']
-	  today_date=datetime.date.today().strftime("% dnjf   %d  dlf ")
+	  today_date=datetime.date.today().strftime("%m 월 %d 일")
 
 	  return JsonResponse({
 
 	  'message': {
-	  						'text': today_dat + 'dml' + iot_name + 'wndtldlqslek. '
+	   'text': today_dat + '  의' + iot_name + '입니다 . '
 	  }
 	  })
