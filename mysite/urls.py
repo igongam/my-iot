@@ -20,5 +20,5 @@ from iottest.views import answer
 
 urlpatterns = [
     url(r'^keyboard/', keyboard, name='keyboard'),
-    url(r'^message',answer,name='answer')
+    url(r'^message',answer,name='answer'),
 ]
