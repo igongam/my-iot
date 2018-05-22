@@ -18,7 +18,7 @@ def keyboard(request):
 def answer(request):
 	  json_str=((request.body).decode('utf-8'))
 	  recieved_json_data=json.loads(json_str)
-	  iot_name=received_json_data['content']
+	  iot_name=recieved_json_data['content']
 	  today_date=datetime.date.today().strftime("%m 월 %d 일")
 
 	  return JsonResponse({
