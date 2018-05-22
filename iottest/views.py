@@ -24,7 +24,7 @@ def answer(request):
 	  return JsonResponse({
 
 	  'message': {
-	   'text': today_dat + '의' + iot_name + '입니다.'
+	   'text': today_date + '의' + iot_name + '입니다.'
 	  },
 
 	'keyboard':{
