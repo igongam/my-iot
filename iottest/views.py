@@ -49,7 +49,7 @@ def humidity(humidity):
 
 def get_result(iot_name):
 	if iot_name== '온도': 
-		return "현재온도" + temperautre(temperature)
+		return "현재온도" + temperature(temperature)
 	elif iot_name == '습도':
 		return "현재습도" + humidity(humidity)
 	else : 
