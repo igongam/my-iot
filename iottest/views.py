@@ -25,7 +25,7 @@ def answer(request):
 
 	  'message': {
 
-	   'text': today_date + '의' + iot_name + '입니다.' +get_result (iot_name)
+	   'text': today_date + '의' + iot_name + '입니다.' +get_result(iot_name)
 	  },
 
 
@@ -48,7 +48,7 @@ def humidity(humi):
 
 def get_result(iot_name):
 	if iot_name =='온도': 
-		return "현재온도: %.2f" % global_temperature
+		return "현재온도: %.2f"%global_temperature
 	elif iot_name =='습도':
 		return "현재습도" + humidity(humidity)
 	else : 
