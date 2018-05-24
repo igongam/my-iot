@@ -17,12 +17,12 @@ from django.conf.urls import url
 from django.contrib import admin
 from iottest.views import keyboard
 from iottest.views import answer
-from iottest.views import temperature
+
 from iottest.views import humidity 
 
 urlpatterns = [
     url(r'^keyboard/', keyboard, name='keyboard'),
     url(r'^message',answer,name='answer'),
-    url(r'^temperature/(?P<temp>\w+)$',temperature,name='temperature'),
-    url(r'^humidity/(?P<humi>\w+)$',humidity,name='humidity'),
+    
+    url(r'^humidity/(?P<humi>\d+)$',humidity,name='humidity'),
 ]
