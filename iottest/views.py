@@ -36,11 +36,12 @@ def answer(request):
 	  })
 
 
-def temperature(temperature):
+def temperature(temp):
 	global global_temperature
 	global_temperature=float(temperature)
 
-def humidity(humidity):
+
+def humidity(humi):
 	
 	return "50"
 

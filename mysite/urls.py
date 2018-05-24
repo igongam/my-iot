@@ -23,6 +23,6 @@ from iottest.views import humidity
 urlpatterns = [
     url(r'^keyboard/', keyboard, name='keyboard'),
     url(r'^message',answer,name='answer'),
-    url(r'^temperature/(?P<temperature>\w+)$',temperature,name='temperature'),
-    url(r'^humidity/(?P<humidity>\w+)$',humidity,name='humidity'),
+    url(r'^temperature/(?P<temp>\w+)$',temperature,name='temperature'),
+    url(r'^humidity/(?P<humi>\w+)$',humidity,name='humidity'),
 ]
