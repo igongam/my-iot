@@ -42,8 +42,8 @@ def temperature(temperature):
 	return global_temperature
 
 def humidity(humidity):
-	
-	return "50"
+	humidity=0;
+	return humidity
 
 
 def get_result(iot_name):
