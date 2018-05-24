@@ -38,7 +38,7 @@ def answer(request):
 
 def humidity(humi):
 	global global_humidity
-	global_humidity=humi
+	global_humidity=float(humi)
 
 
 def get_result(iot_name):
