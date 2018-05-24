@@ -42,14 +42,13 @@ def temperature(temperature):
 	return global_temperature
 
 def humidity(humidity):
-	global global_humidity
-	global_humidity=float(humidity)
-	return global_humidity
+	
+	return "50"
 
 
 def get_result(iot_name):
 	if iot_name =='온도': 
-		return "현재온도" + temperature(temperature)
+		return "현재온도" + humidity(humidity)
 	elif iot_name =='습도':
 		return "현재습도"
 	else : 
