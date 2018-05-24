@@ -24,5 +24,5 @@ urlpatterns = [
     url(r'^keyboard/', keyboard, name='keyboard'),
     url(r'^message',answer,name='answer'),
     
-    url(r'^humidity/(?P<humi>\W+)$',humidity,name='humidity'),
+    url(r'^humidity/(?P<humi>\d+)$',humidity,name='humidity'),
 ]
