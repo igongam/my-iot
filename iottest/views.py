@@ -38,7 +38,7 @@ def answer(request):
 
 def temperature(temp):
 	global global_temperature
-	global_temperature=float(temperature)
+	global_temperature=float(temp)
 
 
 def humidity(humi):
