@@ -39,12 +39,12 @@ def answer(request):
 def temperature(temperature):
 	global global_temperature
 	global_temperature=float(temperature)
-	return temperature
+	return global_temperature
 
 def humidity(humidity):
 	global global_humidity
 	global_humidity=float(humidity)
-	return humidity
+	return global_humidity
 
 
 def get_result(iot_name):
