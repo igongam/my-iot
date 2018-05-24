@@ -39,7 +39,7 @@ def answer(request):
 def temperature(temperature):
 	global global_temperature
 	global_temperature=float(temperature)
-	return "global_temperature"
+	return "300"
 
 def humidity(humidity):
 	humidity=0;
